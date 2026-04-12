@@ -1,5 +1,5 @@
 <h1 align="center">Realtime Spotify Application</h1>
-
+// Deployed Link : https://spotify-with-chat-app.vercel.app/
 -   🎸 Listen to music, play next and previous songs
 -   🔈 Update the volume with a slider
 -   🎧 Admin dashboard to create albums and songs
