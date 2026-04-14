@@ -84,8 +84,17 @@ if (process.env.NODE_ENV === "production") {
 app.use((err, req, res, next) => {
 	res.status(500).json({ message: process.env.NODE_ENV === "production" ? "Internal server error" : err.message });
 });
+  
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 httpServer.listen(PORT, () => {
 	console.log("Server is running on port " + PORT);
 	connectDB();
 });
+
