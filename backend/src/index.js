@@ -88,11 +88,7 @@ app.use((err, req, res, next) => {
 app.get("/", (req, res) => {
   res.send("Backend is running");
 });
-
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
+ 
 httpServer.listen(PORT, () => {
 	console.log("Server is running on port " + PORT);
 	connectDB();
